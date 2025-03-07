@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /*Cores Neutras*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /*Cores Primarias*/
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /*Background*/
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /*Circle*/
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*Fontes*/
+    --fonte-principal: "Hanken Grotesk", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    
+}
+
+.cabecalho {
+    background: linear-gradient(to bottom, var(--Light-slate-blue), 35%, var(--Light-royal-blue));
+    height: auto;
+    border-radius: 0 0 30px 30px;
+}
+
+.cabecalho h3 {
+    color: var(--Light-lavender);
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;   
+    font-size: 16px;
+}
+
+.cabecalho-informacao-dados {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Violet-blue), 60%, var(--Persian-blue));
+}
+
+.info1 {
+    font-weight: 800;
+    font-size: 50px;
+    padding-top: 20px;
+    color: white;
+}
+
+.info2 {
+    color: var(--Light-lavender);
+}
+
+.cabecalho-descricao {
+    margin: 15px 35px 35px 35px;
+    text-align: center;
+}
+
+.cabecalho-descricao-titulo {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--Pale-blue);
+}
+
+.cabecalho-descricao-paragrafo {
+    color: var(--Light-lavender);
+    font-size: 15px;
+    margin: 15px;
+    padding-bottom: 40px;
+}
+
+.sumario-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sumario-titulo {
+    margin: 0px 25px 20px 25px;
+    font-weight: 700;
+}
+
+.sumario-dados li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    width: 85%;
+    margin-left: 7%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+span {
+    color: var(--Light-lavender);
+}
+
+img {
+    position: relative;
+    top: 4px;
+}
+
+.dados-reaction {
+    background-color: rgba(255, 0, 0, 0.062);
+}
+
+.reaction1 {
+    color: red
+}
+
+.dados-memory {
+    background-color: rgba(255, 166, 0, 0.062);
+}
+
+.memory1 {
+    color: orange;
+}
+
+.dados-verbal {
+    background-color: rgba(0, 128, 0, 0.034);
+}
+
+.verbal1 {
+    color: green;
+}
+
+.dados-visual {
+    background-color: rgba(0, 0, 255, 0.055);
+}
+
+.visual1 {
+    color: blue;
+}
+
+b {
+    color: black;
+}
+
+.bottom {
+    text-align: center;
+    color: white;
+    background-color: var(--Dark-gray-blue);
+    padding: 15px;
+    border-radius: 30px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.bottom:hover {
+    background-color: var(--Light-royal-blue);
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        background-color: var(--Pale-blue);
+    }
+    
+    body {
+        height: 100vh;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .cabecalho {
+        border-radius: 25px;
+        width: 40%;
+        height: 45%;
+    }
+
+    .cabecalho h3 {
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .cabecalho-informacao-dados {
+        width: 180px;
+        height: 180px;
+        padding-top: 15px;
+    }
+
+    .info1 {
+        font-size: 70px;
+    }
+
+    .sumario-container {
+        background-color: white;
+        height: 45%;
+        width: 40%;
+        background-clip: padding-box;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    .sumario-titulo {
+        margin-top: 25px;
+        font-size: 22px;
+    }
+
+    footer {
+        height: 100vh;
+        margin-top: 25px;
+    }
+}
